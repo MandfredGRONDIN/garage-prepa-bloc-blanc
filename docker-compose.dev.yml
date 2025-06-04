@@ -1,0 +1,7 @@
+services:
+  web:
+    volumes:
+      - ./php:/var/www/html
+      - ./config/php.dev.ini:/usr/local/etc/php/conf.d/custom.ini
+    environment:
+      PHP_ENV: dev
